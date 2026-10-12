@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#2A3042">
+    <title>Edit Product - Vinixx Admin</title>
+    <link rel="icon" href="assets/img/vinixx-icon.png">
+    <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+
+<body>
+    <aside class="sidebar" aria-label="Main navigation">
+        <div class="sb-head"><button class="sb-close" type="button" aria-label="Close menu"><svg class="i "
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                </svg></button><img src="assets/img/vinixx-logo.png" alt="Vinixx"></div>
+        <nav class="sb-nav">
+            <div class="sb-label">Menu</div><a class="sb-link" href="dashboard.html"><svg class="i " viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <rect x="3" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="14" width="7" height="7" rx="1" />
+                    <rect x="3" y="14" width="7" height="7" rx="1" />
+                </svg><span>Dashboard</span></a><a class="sb-link" href="users.html"><svg class="i " viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+                </svg><span>Users</span></a><a class="sb-link" href="categories.html"><svg class="i "
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z" />
+                    <circle cx="7" cy="7" r="1.5" />
+                </svg><span>Categories</span></a><a class="sb-link active" href="products.html"><svg class="i "
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                    <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" />
+                </svg><span>Master Catalogue</span></a><a class="sb-link" href="orders.html"><svg class="i "
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="9" cy="21" r="1" />
+                    <circle cx="20" cy="21" r="1" />
+                    <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                </svg><span>Orders</span></a><a class="sb-link" href="support.html"><svg class="i " viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3M12 17h.01" />
+                </svg><span>Customer Support</span></a><a class="sb-link" href="settings.html"><svg class="i "
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="3" />
+                    <path
+                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                </svg><span>Settings</span></a><a class="sb-link" href="legal.html"><svg class="i " viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <path d="M14 2v6h6M16 13H8M16 17H8" />
+                </svg><span>Legal Pages</span></a>
+        </nav>
+        <div class="sb-foot"><a class="sb-link logout" href="login.html"><svg class="i " viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+                </svg><span>Logout</span></a></div>
+    </aside>
+    <div class="backdrop"></div>
+    <div class="main">
+        <header class="topbar">
+            <div class="tb-left"><button class="menu-btn" type="button" aria-label="Open menu"><svg class="i "
+                        viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M3 12h18M3 6h18M3 18h18" />
+                    </svg></button>
+                <div class="tb-title">Edit Product</div>
+            </div>
+            <div class="profile"><button class="profile-btn" type="button"><span class="avatar"><img
+                            src="assets/img/users/profile.png" alt=""></span><span class="pmeta"><strong>Admin
+                            User</strong><span>Administrator</span></span></button>
+                <div class="dd"><a href="profile.html"><svg class="i " viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>My Profile</a><a href="settings.html"><svg class="i " viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <circle cx="12" cy="12" r="3" />
+                            <path
+                                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z" />
+                        </svg>Settings</a><a href="login.html" style="color:var(--danger)"><svg class="i "
+                            viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+                        </svg>Logout</a></div>
+            </div>
+        </header>
+        <main class="content">
+            <div class="page-head">
+                <div>
+                    <div class=crumbs><a href="products.html">Products</a> / Edit</div>
+                    <h1>Edit Product</h1>
+                    <p>Update catalogue item</p>
+                </div>
+            </div>
+            <form data-toast-submit="Product saved (demo)">
+                <div class="grid-form">
+                    <div>
+                        <section class="card">
+                            <div class="card-h">
+                                <div>
+                                    <h3>Basic Information</h3>
+                                </div>
+                            </div>
+                            <div class="card-b">
+                                <div class="form-grid">
+                                    <div class=full><label>Product Name <span class=req>*</span></label><input
+                                            type="text" name="name" value="Thums Up 750ml" placeholder="Product Name"
+                                            required></div>
+                                    <div class="full"><label>Description</label><textarea
+                                            placeholder="Product description">Refreshing carbonated soft drink. Serve chilled.</textarea>
+                                    </div>
+                                    <div><label>Category <span class=req>*</span></label><select>
+                                            <option>Fruits & Vegetables</option>
+                                            <option>Grocery Staples</option>
+                                            <option>Biscuits & Snacks</option>
+                                            <option>Sweets & Mithai</option>
+                                            <option selected>Cold Drinks</option>
+                                            <option>Dry Fruits & Nuts</option>
+                                            <option>Pooja Essentials</option>
+                                            <option>Chocolates</option>
+                                            <option>Pickles & Preserves</option>
+                                            <option>Beauty & Personal Care</option>
+                                            <option>Festive Specials</option>
+                                        </select></div>
+                                    <div><label>Brand</label><input type="text" name="brand" value="Coca-Cola"
+                                            placeholder="Brand"></div>
+                                    <div><label>Base SKU</label><input type="text" name="sku" value="CD-TU-750"
+                                            placeholder="Base SKU"></div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <div class="card-h">
+                                <div>
+                                    <h3>Variants &amp; Pack Sizes</h3>
+                                    <p>Vendors choose from these variants</p>
+                                </div><button class="btn sec sm" type="button" data-toast="Demo: variant row added"><svg
+                                        class="i " viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M12 5v14M5 12h14" />
+                                    </svg>Add Variant</button>
+                            </div>
+                            <div class="table-wrap">
+                                <table class="stack">
+                                    <thead>
+                                        <tr>
+                                            <th>Pack Size / Variant Name</th>
+                                            <th>Variant SKU</th>
+                                            <th>Default MRP (₹)</th>
+                                            <th>Default Price (₹)</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr data-removable>
+                                            <td class="first" data-label="Pack Size / Variant Name"><input value="500 g"
+                                                    placeholder="e.g. 500 g"></td>
+                                            <td data-label="Variant SKU"><input value="CD-TU-500" placeholder="SKU">
+                                            </td>
+                                            <td data-label="Default MRP (₹)"><input type="number" value="55"></td>
+                                            <td data-label="Default Price (₹)"><input type="number" value="50"></td>
+                                            <td class="act" data-label="Action"><button class="btn ghost icon del"
+                                                    type="button" data-delete="This variant will be removed."><svg
+                                                        class="i " viewBox="0 0 24 24" aria-hidden="true">
+                                                        <path
+                                                            d="M3 6h18M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6M10 11v6M14 11v6M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" />
+                                                    </svg></button></td>
+                                        </tr>
+                                        <tr data-removable>
+                                            <td class="first" data-label="Pack Size / Variant Name"><input value="1 kg"
+                                                    placeholder="e.g. 500 g"></td>
+                                            <td data-label="Variant SKU"><input value="CD-TU-1000" placeholder="SKU">
+                                            </td>
+                                            <td data-label="Default MRP (₹)"><input type="number" value="110"></td>
+                                            <td data-label="Default Price (₹)"><input type="number" value="98"></td>
+                                            <td class="act" data-label="Action"><button class="btn ghost icon del"
+                                                    type="button" data-delete="This variant will be removed."><svg
+                                                        class="i " viewBox="0 0 24 24" aria-hidden="true">
+                                                        <path
+                                                            d="M3 6h18M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6M10 11v6M14 11v6M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2" />
+                                                    </svg></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <div class="card-h">
+                                <div>
+                                    <h3>Base Pricing (Reference)</h3>
+                                </div>
+                            </div>
+                            <div class="card-b">
+                                <div class="form-grid">
+                                    <div><label>Regular Price (₹) <span class=req>*</span></label><input type="number"
+                                            name="mrp" value="45" placeholder="Regular Price (₹)" required></div>
+                                    <div><label>Sale Price (₹)</label><input type="number" name="sale" value="40"
+                                            placeholder="Sale Price (₹)"></div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                    <div>
+                        <section class="card">
+                            <div class="card-h">
+                                <div>
+                                    <h3>Product Images</h3>
+                                </div>
+                            </div>
+                            <div class="card-b">
+                                <div class="form-grid" style="grid-template-columns:1fr">
+                                    <div><label>Main Image</label><label class="upload"><img
+                                                src="assets/img/products/p0.webp" alt=""><span>Click to upload an image
+                                                (JPG, PNG)</span><input type="file" accept="image/*"></label></div>
+                                    <div><label>Gallery Images</label><label class="upload"><span>Click to upload an
+                                                image (JPG, PNG)</span><input type="file" accept="image/*"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="card">
+                            <div class="card-h">
+                                <div>
+                                    <h3>Publish Settings</h3>
+                                </div>
+                            </div>
+                            <div class="card-b"><label class="switch"><input type="checkbox" checked>Active</label>
+                            </div>
+                        </section>
+                        <div class="tip">Inventory tip: set a low-stock threshold in Settings so vendors get alerts
+                            early.</div>
+                    </div>
+                </div>
+                <div class="form-actions"><button class="btn" type="submit"><svg class="i " viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path d="M20 6L9 17l-5-5" />
+                        </svg>Save Product</button><a class="btn sec" href="products.html">Cancel</a></div>
+            </form>
+        </main>
+        <footer class="footer">© 2026 Vinixx. All rights reserved.</footer>
+    </div>
+    <div class="modal" id="confirm-modal">
+        <div class="box">
+            <h3>Are you sure?</h3>
+            <p id="confirm-text">This record will be removed.</p>
+            <div class="actions" style="justify-content:flex-end"><button class="btn sec" type="button"
+                    data-modal-close>Cancel</button><button class="btn danger" type="button"
+                    data-modal-confirm>Delete</button></div>
+        </div>
+    </div>
+    <script src="assets/js/admin.js"></script>
+</body>
+
+</html>
