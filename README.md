@@ -1,5 +1,4 @@
 # Vinixx Admin – static HTML / CSS / JS
-Open `index.html` -> `login.html` (any 10-digit number, any OTP) -> dashboard.
-- 21 plain HTML pages; content and dummy data are written in the markup
-- `assets/css/admin.css` – styling; palette variables at the top (primary #2A3042)
-- `assets/js/admin.js` – interactions only (drawer, filters, delete confirm, form toggles, OTP steps)
+https://vinitlikhar.github.io/vinixx-marketplace-admin/
+
+<img width="1920" height="1760" alt="image" src="https://github.com/user-attachments/assets/171b9185-b477-4c8b-b1c2-e2293e05ab46" />
